@@ -19,15 +19,12 @@ export const CategoryList = () => {
 };
 
 
-export const IsBestSeller = () => { 
+/* export const IsBestSeller = () => { 
  return <ul> {plantList.map((p,index ) => {return  p.isBestSale ? <li key={`${p}-${index}`}> {p.name} 🔥 </li> : <li> {p.name} 👎 </li> } )} </ul> ;
-} ; 
+} ;  */
 
-
-/* export const IsBestSellerr = () => {plantList.map((plant) => (
-    <li key={ plant.id }>
-        {plant.isBestSale ? <span> {plant} 🔥</span> : <span> {plant} 👎</span>}
-    </li>
-))} ; */
+export const IsBestSeller = () => { 
+    return <ul> {plantList.map((p,index ) => { return p.isBestSale && <li key={`${p}-${index}`}> {p.name} 🔥 </li> } )} </ul> ;
+   } ; 
 
 
