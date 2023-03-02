@@ -1,6 +1,6 @@
-import {plantList} from '../../data/dataSet'
+import {plantList} from '../../data/dataSet';
 
-const flowersList  = [
+const flowersList = [
   'monstera',
   'ficus lyrata',
   'pothos argenté',
@@ -8,10 +8,16 @@ const flowersList  = [
   'palmier',
 ];
 
+export const FlowersShow = () => {
+  return <ul> {flowersList.map ((f,index) => <li key={`${f}-${index}`}> {f} </li>)} </ul>;
+};
+
+export const CategoryList = () => {
+
+    const Categories = plantList.reduce((acc,p) => acc.includes(p.category)? acc : acc.concat(p.category), [])
 
 
-export const FlowersShow = () => { return <ul> {flowersList.map( f => <li> {f} </li>)} </ul>}
 
 
-export const CategoryList = () => {return <ul> { plantList.map(p => <li> {p.category} </li> ) } </ul>}
-
+  return <ul> {Categories.map ((c,index) => <li  key={`${c}-${index}`}> {c} </li>)} </ul>;
+};
