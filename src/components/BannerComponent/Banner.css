@@ -4,8 +4,9 @@
 }
 
 .style-logo {
-	height: 45px;
-	width: 45px;
+	height: 150px;
+	width: 150px;
+    padding-bottom: 45px;
 }
 
 .style-banner {

@@ -1,13 +1,13 @@
 function cart () {
 
-const pinkPrice  = 12  ;
-const redPrice = 25 ; 
-const yellowPrice = 36 ; 
+const svDiscount  = 50 ;
+const redFlowersDiscount = 20 ; 
+const birthdayDiscount = 10 ; 
 
 return <ul> 
-<li> the pink price is {pinkPrice}</li>
-<li> the red price is {redPrice}</li>
-<li> the yellow price is {yellowPrice}</li>
+<li> offre saint valentin {svDiscount} % </li>
+<li> offre fleurs rouges  {redFlowersDiscount} % </li>
+<li> offre anniversaire {birthdayDiscount} % </li>
 </ul>
 
 }
