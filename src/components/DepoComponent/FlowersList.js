@@ -1,3 +1,5 @@
+import {plantList} from '../../data/dataSet'
+
 const flowersList  = [
   'monstera',
   'ficus lyrata',
@@ -8,8 +10,8 @@ const flowersList  = [
 
 
 
-function FlowersShow () 
-{ return <ul> {flowersList.map( f => <li> {f} </li>)} </ul>}
+export const FlowersShow = () => { return <ul> {flowersList.map( f => <li> {f} </li>)} </ul>}
 
 
-export default FlowersShow 
+export const CategoryList = () => {return <ul> { plantList.map(p => <li> {p.category} </li> ) } </ul>}
+
