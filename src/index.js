@@ -4,13 +4,13 @@ import './index.css';
 //import App from './components/AppComponent/App';
 import Banner from './components/BannerComponent/Banner'
 import Cart from './components/CartComponent/Cart';
-import {FlowersShow , CategoryList} from './components/DepoComponent/FlowersList';
+import { CategoryList , IsBestSeller } from './components/DepoComponent/FlowersList';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-  <Banner/> <Cart/> <FlowersShow/> <CategoryList/>
+  <Banner/> <Cart/> <CategoryList/> <IsBestSeller/>
   </React.StrictMode>
 );
 
