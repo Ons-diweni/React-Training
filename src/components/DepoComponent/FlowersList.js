@@ -18,6 +18,6 @@ export const CategoryList = () => {
 
 
 
-
-  return <ul> {Categories.map ((c,index) => <li  key={`${c}-${index}`}> {c} </li>)} </ul>;
+ //Keys Must Be Unique
+  return <ul> {Categories.map ((c,index) => <li  key={c}> {c} </li>)} </ul>;
 };
