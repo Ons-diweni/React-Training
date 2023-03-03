@@ -1,16 +1,15 @@
 .style-title {
-    padding-left: 12px;
-    color : black ;
+	padding-left: 32px;
+	color: black;
 }
 
 .style-logo {
-	height: 150px;
-	width: 150px;
-    padding-bottom: 15px;
+	height: 45px;
+	width: 45px;
 }
 
 .style-banner {
-    color: black;
+	color: black;
 	text-align: right;
 	padding: 32px;
 	border-bottom: solid 3px black;
