@@ -4,6 +4,7 @@ import './index.css';
 //import App from './components/AppComponent/App';
 import Banner from './components/BannerComponent/Banner'
 import Cart from './components/CartComponent/Cart';
+import { Prop } from './components/testProps.js/prop';
 import { Recommendation } from './components/RecommendComponent/Recommendation';
 import { CategoryList , IsBestSeller } from './components/DepoComponent/FlowersList';
 import reportWebVitals from './reportWebVitals';
@@ -11,7 +12,8 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-  <Banner/> <Cart/> <CategoryList/> <IsBestSeller/> 
+{/*   <Banner/> <Cart/> <CategoryList/> <IsBestSeller/>  */}
+      <Prop  name = "Ons" prenom = "Diweni"/>
   </React.StrictMode>
 );
 
