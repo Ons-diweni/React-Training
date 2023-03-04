@@ -7,7 +7,7 @@ export const plantList = [
 		light: 2,
 		water: 3,
         price : 10,
-		cover : "../assets/web-tete.jpg"
+		cover : "https://www.bioalaune.com/img/article/7022-plante_arbre_monde_vegetal_intelligent_398.jpg"
 	},
 	{
 		name: 'ficus lyrata',
@@ -17,7 +17,7 @@ export const plantList = [
 		water: 1,
         isBestSale : true,
 		price : 12,
-		cover : "../assets/web-tete.jpg"
+		cover : "https://www.bioalaune.com/img/article/7022-plante_arbre_monde_vegetal_intelligent_398.jpg"
 	},
 	{
 		name: 'pothos argenté',
@@ -27,7 +27,7 @@ export const plantList = [
 		water: 2,
         isBestSale : true,
 		price : 15,
-		cover : "../assets/web-tete.jpg"
+		cover : "https://www.bioalaune.com/img/article/7022-plante_arbre_monde_vegetal_intelligent_398.jpg"
 	},
 	{
 		name: 'yucca',
@@ -36,7 +36,7 @@ export const plantList = [
 		light: 3,
 		water: 1,
 		price : 11,
-		cover : "../assets/web-tete.jpg"
+		cover : "https://www.bioalaune.com/img/article/7022-plante_arbre_monde_vegetal_intelligent_398.jpg"
 	},
 	{
 		name: 'olivier',
@@ -45,7 +45,7 @@ export const plantList = [
 		light: 3,
 		water: 1,
 		price : 17,
-		cover : "../assets/monstera.jpg"
+		cover : "https://www.bioalaune.com/img/article/7022-plante_arbre_monde_vegetal_intelligent_398.jpg"
 
 	},
 	{
@@ -55,7 +55,7 @@ export const plantList = [
 		light: 2,
 		water: 2,
 		price : 3,
-		cover : "../assets/monstera.jpg"
+		cover : "https://www.bioalaune.com/img/article/7022-plante_arbre_monde_vegetal_intelligent_398.jpg"
 	},
 	{
 		name: 'basilique',
@@ -65,7 +65,7 @@ export const plantList = [
 		light: 2,
 		water: 3 ,
 		price : 18,
-		cover : "../assets/monstera.jpg"
+		cover : "https://www.bioalaune.com/img/article/7022-plante_arbre_monde_vegetal_intelligent_398.jpg"
 	},
 	{
 		name: 'aloe',
@@ -74,7 +74,7 @@ export const plantList = [
 		light: 2,
 		water: 1 ,
 		price : 13,
-		cover : "../assets/monstera.jpg"
+		cover : "https://www.bioalaune.com/img/article/7022-plante_arbre_monde_vegetal_intelligent_398.jpg"
 	},
 	{
 		name: 'succulente',
@@ -83,7 +83,7 @@ export const plantList = [
 		light: 2,
 		water: 1,
 		price : 19,
-		cover : "/src/assets/web-tete.jpg"
+		cover : "https://www.bioalaune.com/img/article/7022-plante_arbre_monde_vegetal_intelligent_398.jpg"
 	}
 ]
  

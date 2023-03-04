@@ -7,7 +7,7 @@ export const PlanItem = ({name, cover, id, light, water }) => {
     <div key={id} className="item">
 
       <div className="care-info">
-      <div className="cover">  <img alt="Plante" src={cover} /> </div> 
+      <img className="cover" alt="Plante" src={cover} /> 
         <h3 className="">{name} </h3>
         <div className="info-line">
           <span>Niveau de lumière :</span>
