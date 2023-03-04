@@ -1,4 +1,4 @@
-export const Care = ({scaleValue, careType}) => {
+export const CareScale = ({scaleValue, careType}) => {
   
 const range = [1, 2, 3];
 const guessType = careType === 'light' ? '☀️' : '💧';

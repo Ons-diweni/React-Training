@@ -1,7 +1,7 @@
 .categories {
-    background-color: #f2f2f2;
+    background-color:salmon;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 0px;
   }
   
   .categories h2 {
@@ -43,16 +43,18 @@
   }
   
   .flowers ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     list-style: none;
     margin: 0;
     padding: 0;
   }
   
   .flowers li {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
-   
+    flex-basis: calc(33.33% - 20px);
+    margin: 10px;
+    text-align: center;
   }
   
   .flowers h3 {
@@ -66,7 +68,24 @@
     box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
   }
   
-  .flowers p {
+  .flowers .care-info {
+    margin-top: 10px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .flowers .care-info .info-line {
+    display: flex;
+    align-items: center;
+  }
+  
+  .flowers .care-info .info-line span {
+    font-weight: bold;
+    margin-right: 5px;
+  }
+  
+  .flowers .price {
     font-size: 16px;
     font-weight: bold;
     margin-top: 10px;

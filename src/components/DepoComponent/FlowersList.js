@@ -1,5 +1,5 @@
 import {plantList} from '../../data/dataSet';
-import {Care} from '../CareComponent/care';
+import {CareScale} from '../CareScaleComponent/careScale';
 import './FlowersList.css';
 
 /* const flowersList = [
@@ -19,40 +19,36 @@ export const FlowersList = () => {
   //Keys Must Be Unique
   return (
     <div>
-      <div class="categories">
+      <div className ="categories">
         <h2>Catégories</h2>
         <ul>
-          {Categories.map ((c, index) => (
-            <li key={c}> <a href="#"> {c} </a> </li>
+          {Categories.map ((c, index) => <li key={c}> <a> {c} </a> </li>)}
+        </ul>
+      </div>
+      <div className ="flowers">
+        <h2>Fleurs disponibles</h2>
+        <ul>
+          {plantList.map (p => (
+            <li key={p.id}>
+              <div className ="care-info">
+                <h3 className ="" >{p.name} {p.isBestSale && <span>🔥</span>}</h3>
+                <div className ="info-line">
+                  <span>Niveau de lumière :</span>
+                  <div><CareScale careType="light" scaleValue={p.light} /></div>
+                </div>
+                <div className ="info-line">
+                  <span>Niveau d'arrosage :</span>
+                  <div><CareScale careType="water" scaleValue={p.water} /></div>
+                </div>
+                <div className ="price">Prix : {p.price}€</div>
+              </div>
+            </li>
           ))}
         </ul>
       </div>
-      <div class="flowers">
-  <h2>Fleurs disponibles</h2>
-  <ul>
-    {plantList.map (p => (
-    <li key={p.id}>
-      <div class="care-info">
-      <h3>{p.name} <h5> {p.isBestSale && <span>🔥</span>} </h5> </h3>
-        <p>
-          <strong>Niveau de lumière :</strong>
-          {<Care careType="light" scaleValue={p.light} />}
-        </p>
-        <p>
-          <strong>Niveau d'arrosage :</strong>
-          {<Care careType="water" scaleValue={p.water} />}
-        </p>
-        <p class="price">Prix : {p.price}€</p>
-      </div>
-    </li>
-    ))}
-  </ul>
-</div>
-
     </div>
   );
 };
-
 
 /* export const FlowersShow = () => {
   return <ul> {flowersList.map ((f,index) => <li key={`${f}-${index}`}> {f} </li>)} </ul>;
