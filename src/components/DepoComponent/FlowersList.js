@@ -1,5 +1,5 @@
 import {plantList} from '../../data/dataSet';
-import {CareScale} from '../CareScaleComponent/careScale';
+//import {CareScale} from '../CareScaleComponent/careScale';
 import './FlowersList.css';
 import { PlanItem } from '../PlantItem/PlantItem';
 
@@ -29,7 +29,7 @@ export const FlowersList = () => {
       <div className ="flowers">
         <h2>Fleurs disponibles</h2>
         <ul>
-          {plantList.map (p => (
+          {plantList.map ((p , index)=> (
              //Keys Must Be Unique
             <li key={p.id}>
              <PlanItem   name={p.name} cover={p.cover} id={p.id}  light={p.light} water={p.water} />

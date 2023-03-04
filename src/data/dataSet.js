@@ -83,7 +83,7 @@ export const plantList = [
 		light: 2,
 		water: 1,
 		price : 19,
-		cover : "../assets/monstera.jpg"
+		cover : "/src/assets/web-tete.jpg"
 	}
 ]
  
