@@ -28,26 +28,27 @@ export const FlowersList = () => {
         </ul>
       </div>
       <div class="flowers">
-        <h2>Fleurs disponibles</h2>
-        <ul>
-          {plantList.map (p => (
-            <li key={p.id}>
-              <h3>{p.name} <h5> {p.isBestSale && <span>🔥</span>} </h5> </h3>
-              <div class="care-info">
-                <p>
-                  <strong>Niveau de lumière :</strong>
-                  {<Care careType="light" scaleValue={p.light} />}
-                </p>
-                <p>
-                  <strong>Niveau d'arrosage :</strong>
-                  {<Care careType="water" scaleValue={p.water} />}
-                </p>
-              </div>
-              <p class="price">Prix : 10€</p>
-            </li>
-          ))}
-        </ul>
+  <h2>Fleurs disponibles</h2>
+  <ul>
+    {plantList.map (p => (
+    <li key={p.id}>
+      <div class="care-info">
+      <h3>{p.name} <h5> {p.isBestSale && <span>🔥</span>} </h5> </h3>
+        <p>
+          <strong>Niveau de lumière :</strong>
+          {<Care careType="light" scaleValue={p.light} />}
+        </p>
+        <p>
+          <strong>Niveau d'arrosage :</strong>
+          {<Care careType="water" scaleValue={p.water} />}
+        </p>
+        <p class="price">Prix : {p.price}€</p>
       </div>
+    </li>
+    ))}
+  </ul>
+</div>
+
     </div>
   );
 };

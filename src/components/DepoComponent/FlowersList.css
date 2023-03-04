@@ -51,9 +51,8 @@
   .flowers li {
     display: flex;
     flex-direction: column;
-    align-items: center;
     margin-bottom: 20px;
-    text-align: center;
+   
   }
   
   .flowers h3 {
@@ -67,17 +66,7 @@
     box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
   }
   
-  .flowers .care-info {
-    margin-top: 10px;
-    text-align: left;
-  }
-  
-  .flowers .care-info p {
-    font-size: 16px;
-    margin: 5px 0;
-  }
-  
-  .flowers .price {
+  .flowers p {
     font-size: 16px;
     font-weight: bold;
     margin-top: 10px;
