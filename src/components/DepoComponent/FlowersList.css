@@ -30,3 +30,56 @@
   .categories a:hover {
     background-color: #ddd;
   }
+
+  .flowers {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .flowers h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .flowers ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .flowers li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .flowers h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .flowers img {
+    max-width: 100%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+  }
+  
+  .flowers .care-info {
+    margin-top: 10px;
+    text-align: left;
+  }
+  
+  .flowers .care-info p {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+  
+  .flowers .price {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
