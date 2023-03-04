@@ -31,9 +31,7 @@ export const FlowersList = () => {
         <ul>
           {plantList.map ((p , index)=> (
              //Keys Must Be Unique
-            <li key={p.id}>
              <PlanItem   name={p.name} cover={p.cover} id={p.id}  light={p.light} water={p.water} />
-            </li>
           ))}
         </ul>
       </div>

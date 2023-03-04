@@ -3,7 +3,7 @@ import logo from '../../assets/logo.png';
 import {Recommendation} from '../RecommendComponent/Recommendation';
 
 function Banner () {
-  const title = 'Bienvenue chez le fleuriste des amoureux';
+  const title = 'Le fleuriste des amoureux';
   return (
     <div className="style-banner">
       <div>

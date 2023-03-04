@@ -3,9 +3,14 @@ import './PlantItem.css'
 
 
 export const PlanItem = ({name, cover, id, light, water }) => {
-  return (
-    <div key={id} className="item">
 
+    function handleClick(e) {
+        console.log('✨ Ceci est mon event :', e)
+    }
+
+
+  return (
+    <li key={id} className="item" onClick={handleClick()}>
       <div className="care-info">
       <img className="cover" alt="Plante" src={cover} /> 
         <h3 className="">{name} </h3>
@@ -18,6 +23,6 @@ export const PlanItem = ({name, cover, id, light, water }) => {
           <div><CareScale careType="water" scaleValue={water} /></div>
         </div>
       </div>
-    </div>
+    </li>
   );
 };
