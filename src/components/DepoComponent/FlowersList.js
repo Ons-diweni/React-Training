@@ -17,7 +17,7 @@ export const FlowersList = () => {
     (acc, p) => (acc.includes (p.category) ? acc : acc.concat (p.category)),
     []
   );
-  //Keys Must Be Unique
+ 
   return (
     <div>
       <div className ="categories">
@@ -30,8 +30,9 @@ export const FlowersList = () => {
         <h2>Fleurs disponibles</h2>
         <ul>
           {plantList.map (p => (
+             //Keys Must Be Unique
             <li key={p.id}>
-             <PlanItem   name= {p.name}  cover={p.cover} id={p.id}  light={p.light} water={p.water} />
+             <PlanItem   name={p.name} cover={p.cover} id={p.id}  light={p.light} water={p.water} />
             </li>
           ))}
         </ul>

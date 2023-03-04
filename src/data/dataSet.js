@@ -7,7 +7,7 @@ export const plantList = [
 		light: 2,
 		water: 3,
         price : 10,
-		cover : "../assets/monstera.jpg"
+		cover : "../assets/web-tete.jpg"
 	},
 	{
 		name: 'ficus lyrata',
@@ -17,7 +17,7 @@ export const plantList = [
 		water: 1,
         isBestSale : true,
 		price : 12,
-		cover : "../assets/monstera.jpg"
+		cover : "../assets/web-tete.jpg"
 	},
 	{
 		name: 'pothos argenté',
@@ -27,7 +27,7 @@ export const plantList = [
 		water: 2,
         isBestSale : true,
 		price : 15,
-		cover : "../assets/monstera.jpg"
+		cover : "../assets/web-tete.jpg"
 	},
 	{
 		name: 'yucca',
@@ -36,7 +36,7 @@ export const plantList = [
 		light: 3,
 		water: 1,
 		price : 11,
-		cover : "../assets/monstera.jpg"
+		cover : "../assets/web-tete.jpg"
 	},
 	{
 		name: 'olivier',
