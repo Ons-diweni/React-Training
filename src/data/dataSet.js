@@ -6,7 +6,8 @@ export const plantList = [
 		isBestSale: true,
 		light: 2,
 		water: 3,
-        price : 10
+        price : 10,
+		cover : "../assets/monstera.jpg"
 	},
 	{
 		name: 'ficus lyrata',
@@ -15,7 +16,8 @@ export const plantList = [
 		light: 3,
 		water: 1,
         isBestSale : true,
-		price : 12
+		price : 12,
+		cover : "../assets/monstera.jpg"
 	},
 	{
 		name: 'pothos argenté',
@@ -24,7 +26,8 @@ export const plantList = [
 		light: 1,
 		water: 2,
         isBestSale : true,
-		price : 15
+		price : 15,
+		cover : "../assets/monstera.jpg"
 	},
 	{
 		name: 'yucca',
@@ -32,7 +35,8 @@ export const plantList = [
 		id: '4kk',
 		light: 3,
 		water: 1,
-		price : 11
+		price : 11,
+		cover : "../assets/monstera.jpg"
 	},
 	{
 		name: 'olivier',
@@ -40,7 +44,8 @@ export const plantList = [
 		id: '5pl',
 		light: 3,
 		water: 1,
-		price : 17
+		price : 17,
+		cover : "../assets/monstera.jpg"
 
 	},
 	{
@@ -49,7 +54,8 @@ export const plantList = [
 		id: '6uo',
 		light: 2,
 		water: 2,
-		price : 3
+		price : 3,
+		cover : "../assets/monstera.jpg"
 	},
 	{
 		name: 'basilique',
@@ -58,7 +64,8 @@ export const plantList = [
 		isBestSale: true,
 		light: 2,
 		water: 3 ,
-		price : 18
+		price : 18,
+		cover : "../assets/monstera.jpg"
 	},
 	{
 		name: 'aloe',
@@ -66,7 +73,8 @@ export const plantList = [
 		id: '8fp',
 		light: 2,
 		water: 1 ,
-		price : 13
+		price : 13,
+		cover : "../assets/monstera.jpg"
 	},
 	{
 		name: 'succulente',
@@ -74,7 +82,8 @@ export const plantList = [
 		id: '9vn',
 		light: 2,
 		water: 1,
-		price : 19
+		price : 19,
+		cover : "../assets/monstera.jpg"
 	}
 ]
  
