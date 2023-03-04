@@ -1,5 +1,6 @@
 import {plantList} from '../../data/dataSet';
-import { Care } from '../CareComponent/care';
+import {Care} from '../CareComponent/care';
+import './FlowersList.css';
 
 /* const flowersList = [
   'monstera',
@@ -18,17 +19,39 @@ export const FlowersList = () => {
   //Keys Must Be Unique
   return (
     <div>
-      <ul>
-        {Categories.map ((c, index) => <li key={c}> {c} </li>)}
-      </ul>
-      <ul>
-        {plantList.map (p => <li key={p.id}> {p.name}  {p.isBestSale && <span>🔥</span>} 
-        {<Care careType='light' scaleValue={p.light} />} 
-        {<Care careType='water' scaleValue={p.water} />} </li>)}
-      </ul>
+      <div class="categories">
+        <h2>Catégories</h2>
+        <ul>
+          {Categories.map ((c, index) => (
+            <li key={c}> <a href="#"> {c} </a> </li>
+          ))}
+        </ul>
+      </div>
+      <div class="flowers">
+        <h2>Fleurs disponibles</h2>
+        <ul>
+          {plantList.map (p => (
+            <li key={p.id}>
+              <h3>{p.name} <h5> {p.isBestSale && <span>🔥</span>} </h5> </h3>
+              <div class="care-info">
+                <p>
+                  <strong>Niveau de lumière :</strong>
+                  {<Care careType="light" scaleValue={p.light} />}
+                </p>
+                <p>
+                  <strong>Niveau d'arrosage :</strong>
+                  {<Care careType="water" scaleValue={p.water} />}
+                </p>
+              </div>
+              <p class="price">Prix : 10€</p>
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 };
+
 
 /* export const FlowersShow = () => {
   return <ul> {flowersList.map ((f,index) => <li key={`${f}-${index}`}> {f} </li>)} </ul>;
