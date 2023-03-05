@@ -16,7 +16,7 @@ const [emailValue, setEmailValue] = useState('Tapez votre email')
 			<div className='lmj-footer-elem'>
                 Laissez-nous votre mail : 
                 <input value={emailValue} type="text" onChange={(e) => setEmailValue(e.target.value) }/> 
-                <button  onClick={() => alert(emailValue)}>Envoyer </button>
+                <button  onClick={() => {(!emailValue.includes('@'))? alert('email non valide '): alert(emailValue)}}>Envoyer </button>
             </div>
 		</footer>
 	)
