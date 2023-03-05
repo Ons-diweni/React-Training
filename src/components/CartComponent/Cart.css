@@ -1,1 +1,26 @@
-.Cart {background-color: yellow;}
+.Cart {
+	color: white;
+	background-color: #31b572;
+	padding: 32px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	width: 200px;
+}
+
+.add-button {
+	margin-left: 32px;
+	cursor: pointer;
+}
+
+.toggle-button {
+	padding: 10px;
+	width: 120px;
+    color: black;
+}
+
+.button-closed {
+	padding: 12px;
+	width: 120px;
+    color: black;
+}
