@@ -1,17 +1,18 @@
-function cart () {
+import { useState } from "react"
+import './Cart.css'
 
-const svDiscount  = 50 ;
-const redFlowersDiscount = 20 ; 
-const birthdayDiscount = 10 ; 
+export const  Cart = () => {
 
-return <ul> 
-<li> offre saint valentin {svDiscount} % </li>
-<li> offre fleurs rouges  {redFlowersDiscount} % </li>
-<li> offre anniversaire {birthdayDiscount} % </li>
-</ul>
+const monsteraPrice = 8
+const [cart, updateCart] = useState(0);
+
+return (<div className="Cart">
+ <h1> Panier : </h1>
+ Monstera : {monsteraPrice}€
+ <button  onClick={() => updateCart(cart+1)} >  add to cart </button>
+ <h3> Totale : {cart*monsteraPrice} </h3>
+
+</div>)
 
 }
 
-
-
-export default cart
