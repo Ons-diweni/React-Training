@@ -23,6 +23,7 @@ const [emailValue, setEmailValue] = useState('Tapez votre email')
 
    
 /* 
+    
       const [inputValues, setInputValues] = useState({ input1: '', input2: '' });
     
       function handleInputChange(name, value) {
@@ -36,6 +37,25 @@ const [emailValue, setEmailValue] = useState('Tapez votre email')
         </div>
       );
     
+
+
+       const [inputValues, setInputValues] = useState(['', '']);
+
+  function handleInputChange(index, value) {
+    setInputValues(prevValues => {
+      const newValues = [...prevValues];
+      newValues[index] = value;
+      return newValues;
+    });
+  }
+
+  return (
+    <div>
+      <input type="text" value={inputValues[0]} onChange={e => handleInputChange(0, e.target.value)} />
+      <input type="text" value={inputValues[1]} onChange={e => handleInputChange(1, e.target.value)} />
+    </div>
+  );
+
      */
 
 
