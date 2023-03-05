@@ -17,7 +17,7 @@ export const FormQuestion = () => {
   return (
     /*  <form  onSubmit={handleSubmit}>
       <input type={Text} name="Myinput" defaultValue="Tapez votre texte"/>
-      <button type="text"> Submit </button>
+      <button> Submit </button>
     </form> */
 
     (
