@@ -27,8 +27,6 @@ export const FlowersList = ({cart , updateCart}) => {
   updateCart([...cleanCart + {name , price , amount : currentPlantAdded.amount+1}])
   }   else {  updateCart([...cart + {name , price , amount:1}]) }
 
-
-
        }
 
 
