@@ -12,12 +12,26 @@ import { PlanItem } from '../PlantItem/PlantItem';
 ];
  */
 
-export const FlowersList = () => {
+export const FlowersList = ({cart , updateCart}) => {
   const Categories = plantList.reduce (
     (acc, p) => (acc.includes (p.category) ? acc : acc.concat (p.category)),
     []
   );
  
+ const addToCart  = (name , price) => { 
+ // retourne le premier élément trouvé dans le tableau cart qui satisfait la condition
+  const currentPlantAdded = cart.find((plant) => plant.name === name)
+  if(currentPlantAdded) {
+  //Cette étape permet de retirer du panier la plante qui est déjà présente avant de la rajouter avec la quantité mise à jour.
+    const cleanCart = cart.filter((plant) => plant.name !== name)
+  updateCart([...cleanCart + {name , price , amount : currentPlantAdded.amount+1}])
+  }   else {  updateCart([...cart + {name , price , amount:1}]) }
+
+
+
+       }
+
+
   return (
     <div>
       <div className ="categories">
@@ -30,8 +44,10 @@ export const FlowersList = () => {
         <h2>Fleurs disponibles</h2>
         <ul>
           {plantList.map ((p , index)=> (
-             //Keys Must Be Unique
+              <div> 
+             {/* //Keys Must Be Unique */}
              <PlanItem   name={p.name} cover={p.cover} id={p.id}  light={p.light} water={p.water} />
+             <button onClick={() => addToCart(p.name , p.price)}> add to cart </button> </div>
           ))}
         </ul>
       </div>
